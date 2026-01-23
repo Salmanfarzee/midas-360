@@ -1,0 +1,44 @@
+.footer-content{
+    font-family: var(--font-family-base);    
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-footer);
+    line-height: var(--line-height-footer);
+    letter-spacing: var(--letter-spacing-base);  
+    color: #454545;
+}
+
+.footer-copyrights{
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-footer);
+    line-height: var(--line-height-copyrights-footer);
+    letter-spacing: var(--letter-spacing-base);  
+    color: #838383;
+}
+
+.footer-quicklinks{
+    font-family: var(--font-family-base);    
+    font-size: var(--font-size-quicklinks-footer);
+    font-weight: var(--font-weight-quicklinks-footer);
+    line-height: var(--line-height-quicklinks-footer);
+    letter-spacing: var(--letter-spacing-base);  
+    color: #454545;
+}
+
+.footer-quicklinks-content{
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-footer);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-footer);
+    letter-spacing: var(--letter-spacing-base);
+    color: #606060;
+}
+
+.footer-disclaimers{
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-disclaimers);
+    line-height: var(--line-height-quicklinks-footer);
+    letter-spacing: var(--letter-spacing-base);  
+    color: #454545;
+}

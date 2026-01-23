@@ -1,0 +1,35 @@
+@use "./fonts";
+@use "./typography";
+@use "./navigation";
+@use "./footer";
+@use "./homePage.scss";
+@use "./common.scss";
+
+
+@tailwind base;
+@tailwind components;   
+@tailwind utilities;
+
+// Scrollbar styles
+/* Custom Scrollbar */
+html {
+  scrollbar-gutter: stable;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #6366f1, #8b5cf6); // Indigo to Purple
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #4f46e5, #7c3aed); // Darker on hover
+}
