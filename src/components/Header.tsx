@@ -4,8 +4,6 @@ import { useLocation } from "react-router-dom";
 import Navigation from "./Navigation";
 import MobileNavigation from "./MobileNavigation";
 
-import midas1 from "../../public/assets/midas-mobile-1.svg"; // white mobile logo
-import midas2 from "../../public/assets/midas-mobile-2.svg"; // color mobile logo
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -60,13 +58,13 @@ const Header: React.FC = () => {
         <a href="/" className="block md:hidden">
           {isHome && !scrolled ? (
             <img
-              src={midas1}
+              src="/assets/midas-mobile-1.svg"
               alt="Midas360 Mobile logo"
               className="transition-all duration-300 ease-in-out"
             />
           ) : (
             <img
-              src={midas2}
+              src="/assets/midas-mobile-2.svg"
               alt="Midas360 Mobile logo"
               className="transition-all duration-300 ease-in-out"
             />

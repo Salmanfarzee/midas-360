@@ -124,8 +124,7 @@ const ContactUs: React.FC = () => {
            <TextField
           marginTop="31px"
           label="Company Name"
-          placeholder="Enter your company name"
-          required
+          placeholder="Enter your company name"     
           name="companyname"
         />
 
