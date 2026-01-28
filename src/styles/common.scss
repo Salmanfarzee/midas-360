@@ -1,54 +1,54 @@
-// Lead the Future
-.lead-the-future-title{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-lead-the-future-title);
-    font-size: var(--font-size-lead-the-future-title);  
-    line-height: var(--line-height-lead-the-future-title);
-    color: #209CD8;
-}
-.lead-the-future-content{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-lead-the-future-content);
-    font-size: var(--font-size-lead-the-future-content);  
-    line-height: var(--line-height-lead-the-future-content);
-    color: #454545;
+/* Lead the Future */
+@mixin fluid-font($size, $line, $base: 1440px) {
+  font-size: calc(#{$size} * (100vw / #{$base}));
+  line-height: calc(#{$line} * (100vw / #{$base}));
 }
 
-.lead-the-future-form-title{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-lead-the-future-form-title);
-    font-size: var(--font-size-lead-the-future-form-title);  
-    line-height: var(--line-height-lead-the-future-form-title);
-    color: #454545;
+.lead-the-future-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  @include fluid-font(67.01px, 73.71px);
+  color: #209CD8;
 }
 
-.lead-the-future-form-label{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-lead-the-future-form-label);
-    font-size: var(--font-size-lead-the-future-form-label);
-    line-height: var(--line-height-lead-the-future-form-label);
-    letter-spacing: var(--letter-spacing-lead-the-future-form-label);
-    color: #606060;
+.lead-the-future-content {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  @include fluid-font(25px, 35px);
+  color: #454545;
 }
 
-.lead-the-future-form-label-required{
-    color: #FF4B4B;
+.lead-the-future-form-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  @include fluid-font(25px, 35px);
+  color: #454545;
 }
 
-.lead-the-future-form-value{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-lead-the-future-form-value);
-    font-size: var(--font-size-lead-the-future-form-value);
-    line-height: var(--line-height-lead-the-future-form-value);
-    letter-spacing: var(--letter-spacing-lead-the-future-form-value);
-    color: #818181;
+.lead-the-future-form-label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  @include fluid-font(18px, 30.75px);
+  letter-spacing: -2px;
+  color: #606060;
 }
 
-.lead-the-future-submit{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-lead-the-future-submit);
-    font-size: var(--font-size-lead-the-future-submit);
-    line-height: var(--line-height-lead-the-future-submit);
-    letter-spacing: var(--letter-spacing-base);
-    color: #FFFFFF;
+.lead-the-future-form-label-required {
+  color: #FF4B4B;
+}
+
+.lead-the-future-form-value {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  @include fluid-font(14px, 30.75px);
+//   letter-spacing: -2px;
+  color: #818181;
+}
+
+.lead-the-future-submit {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  @include fluid-font(20px, 35px);
+//   letter-spacing: 0px;
+  color: #FFFFFF;
 }

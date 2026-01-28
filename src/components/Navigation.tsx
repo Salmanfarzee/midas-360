@@ -2,9 +2,10 @@ import { useState } from "react";
 
 interface NavigationProps {
   scrolled: boolean;
+  isHome: boolean;
 }
 
-const Navigation = ({ scrolled }: NavigationProps) => {
+const Navigation = ({ scrolled ,isHome}: NavigationProps) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
@@ -52,7 +53,7 @@ const Navigation = ({ scrolled }: NavigationProps) => {
             dropdownOpen
               ? "opacity-100 scale-100"
               : "opacity-0 scale-95 pointer-events-none"
-          } ${scrolled ? "bg-white " : ""}`}
+          } ${isHome && scrolled ? "bg-white shadow-md text-black" : isHome ? "bg-transparent text-white" : "bg-white shadow-md text-black"}`}
         >
           <a href="#" className="block px-4">
             News and Events
@@ -64,7 +65,7 @@ const Navigation = ({ scrolled }: NavigationProps) => {
       </div>
 
       <a
-        href="#"
+        href="/contactus"
         className="hover:underline underline-offset-[6px] decoration-white"
       >
         Contact Us
