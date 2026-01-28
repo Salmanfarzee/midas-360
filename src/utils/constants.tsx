@@ -5,7 +5,7 @@ export const caseStudies: caseStudyItemProp[] = [
     title: "Saving $1.2M in Transport <br /> by Enhancing Asset Availability",
     content:
       "How BCT transformed the operations of 79 trains and <br /> 1442 buses on 107 routes, carrying nearly 7 million riders on 179,000 trips.",
-    bgImage: "/assets/case-study-dummy.png",
+    bgImage: "/assets/caseStudy-image.svg",
     actionText: "View case study",
     actionUrl: "/case-study/transport-efficiency",
   },
@@ -13,7 +13,7 @@ export const caseStudies: caseStudyItemProp[] = [
     title: "Reducing Downtime with Predictive Maintenance",
     content:
       "Discover how Midas360 helped reduce breakdowns by 40% across metro fleets using AI-powered diagnostics.",
-    bgImage: "/assets/case-study-dummy.png",
+    bgImage: "/assets/caseStudy-image.svg",
     actionText: "Explore insights",
     actionUrl: "/case-study/predictive-maintenance",
   },
@@ -21,7 +21,7 @@ export const caseStudies: caseStudyItemProp[] = [
     title: "Optimizing Passenger Flow with Smart Scheduling",
     content:
       "Learn how real-time analytics improved rider experience and reduced wait times by 25%.",
-    bgImage: "/assets/case-study-dummy.png",
+    bgImage: "/assets/caseStudy-image.svg",
     actionText: "Read full story",
     actionUrl: "/case-study/passenger-flow",
   },
@@ -73,6 +73,6 @@ export const BenifitsData: benifitsItemProp[] = [
 ];
 
 export const marginMap = {
-  "4.1": "mt-[4.1vh]",
-  "5.6": "mt-[5.6vh]",
-};
+  "4.1": "mt-[41px]",
+  "5.6": "mt-[56px]",
+} as const; // 👈 'as const' makes keys literal types

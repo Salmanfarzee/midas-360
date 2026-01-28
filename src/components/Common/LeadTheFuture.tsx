@@ -1,8 +1,8 @@
 const LeadTheFuture = () => {
-  const TextField = ({ label, placeholder, marginTop, isMobile }) => {
+  const TextField = ({ label, placeholder, marginTop, isMobile }:any) => {
     return (
       <div
-        className="w-[467px] h-[79.14px] flex flex-col"
+        className="md:w-[467px] h-[79.14px] flex flex-col"
         style={{ marginTop: marginTop }}
       >
         <p className="lead-the-future-form-label">

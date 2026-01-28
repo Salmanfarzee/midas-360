@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import clsx from "clsx";
 import Navigation from "./Navigation";
 import MobileNavigation from "./MobileNavigation";
+import midas1 from "/assets/midas-mobile-1.svg";
+import midas2 from "/assets/midas-mobile-2.svg";
 
 const Header = ({ scrolled }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,45 +11,55 @@ const Header = ({ scrolled }) => {
   return (
     <header
       className={clsx(
-        "fixed top-0 left-0 w-full z-50 transition-all duration-300",
+        "fixed top-0 left-0 w-full z-50 md:h-[110px] h-[75px] transition-all duration-300 flex items-center", // header fixed height + vertical centering
         scrolled ? "bg-white shadow-md text-black" : "bg-transparent text-white"
       )}
     >
-      <div
-        className={clsx(
-          "w-full flex flex-row justify-between",
-          scrolled ? "mt-[5.4vh] mb-[6.2vh]" : "mt-[8.9vh] mb-[0]"
-        )}
-      >
-        <div
-          className={clsx(
-            "relative w-[200px] h-[100px]",
-            scrolled ? "ml-[6.9vw]" : "ml-[6.5vw]"
+      <div className="w-full flex flex-row justify-between items-center px-[6vw]">
+        {/* Website logo (desktop) */}
+        <a href="/" className="hidden md:block">
+          {scrolled ? (
+            <img
+              src="/assets/midas-color.svg"
+              alt="Midas360 Home logo"
+              className="transition-all duration-300 ease-in-out"
+            />
+          ) : (
+            <img
+              src="/assets/midas-white.svg"
+              alt="Midas360 Home logo"
+              className="transition-all duration-300 ease-in-out"
+            />
           )}
-        >
-          <a href="/" className="relative w-[200px] h-[100px] block">
-            {scrolled ? (
-              <img
-                src="/assets/midas-logo.png"
-                alt="Midas360 Home logo"
-                className="absolute w-[188px] h-[93px] md:w-[150px] md:h-[75px] opacity-100 transition-all duration-300 ease-in-out"
-              />
-            ) : (
-              <img
-                src="/assets/midas-white-logo.png"
-                alt="Midas360 Home logo"
-                className="absolute w-[177px] h-[87.74px] md:w-[150px] md:h-[75px] opacity-100 transition-all duration-300 ease-in-out"
-              />
-            )}
-          </a>
-        </div>
+        </a>
 
-        <Navigation />
+        {/* Mobile logo */}
+        <a href="/" className="block md:hidden">
+          {scrolled ? (
+            <img
+              src={midas2}
+              alt="Midas360 Home logo"
+              className="transition-all duration-300 ease-in-out"
+            />
+          ) : (
+            <img
+              src={midas1}
+              alt="Midas360 Home logo"
+              className="transition-all duration-300 ease-in-out"
+            />
+          )}
+        </a>
+
+        {/* Navigation (desktop) */}
+        <Navigation scrolled={scrolled} />
+
+        {/* Mobile menu button */}
         <button
-          className="md:hidden focus:outline-none mr-[10vw]"
+          className="md:hidden focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <svg
+          <img src="/assets/mobile-menu.svg" alt="Menu Icon" />
+          {/* <svg
             className="w-6 h-6"
             fill="none"
             stroke="currentColor"
@@ -57,11 +69,16 @@ const Header = ({ scrolled }) => {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+              d={
+                menuOpen
+                  ? "M6 18L18 6M6 6l12 12"
+                  : "M4 6h16M4 12h16M4 18h16"
+              }
             />
-          </svg>
+          </svg> */}
         </button>
       </div>
+
       {/* Mobile Nav */}
       {menuOpen && <MobileNavigation scrolled={scrolled} />}
     </header>

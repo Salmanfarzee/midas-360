@@ -6,7 +6,7 @@ const Benefits = () => {
   return (
     <section>
       <div className="mx-auto w-[86vw] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-[15px] gap-y-[18px] mt-[7.1vh] ml-[7vw] mb-[6.7vh]">
-        <div className="w-[299px] h-[309px] flex flex-col">
+        <div className=" h-[290px] flex flex-col">
           <p className="benifits-title">
             <span className="benifits-title-span">midas360</span>
             <br />

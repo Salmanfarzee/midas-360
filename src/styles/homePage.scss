@@ -1,172 +1,161 @@
-//banner styles ( section 1 )
-.banner-title{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-banner);
-    font-size: var(--font-size-banner);
-    line-height: var(--line-height-banner);
-    letter-spacing: var(--letter-spacing-base);
-    color: #FFFFFF;
+@mixin fluid-font($size, $line, $base: 1440px) {
+  font-size: calc(#{$size} * (100vw / #{$base}));
+  line-height: calc(#{$line} * (100vw / #{$base}));
 }
 
-.banner-span{
-    font-weight: var(--font-weight-banner-span) !important;
+// Banner styles (section 1)
+.banner-title {
+  @include fluid-font(55px, 62px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0;
+  color: #FFFFFF;
 }
 
-.banner-subtitle{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-banner-subtitle);
-    font-size: var(--font-size-banner-subtitle);
-    line-height: var(--line-height-banner-subtitle);
-    letter-spacing: var(--letter-spacing-base);
-    color: #EFEFEF;
+.banner-span {
+  font-weight: 700 !important;
 }
 
-.banner-action-span{
-    font-weight: var(--font-weight-banner-span);
-    font-size: var(--font-size-banner-action-span);
-    line-height: var(--line-height-banner-action-span);
-    letter-spacing: var(--letter-spacing-base);
-    color: #FFFFFF;
+.banner-subtitle {
+  @include fluid-font(20px, 32px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0;
+  color: #EFEFEF;
 }
 
-
-// Train styles ( section 2 )
-.train-title{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-train-section);
-    font-size: var(--font-size-train-section);
-    line-height: var(--line-height-train-section);
-    letter-spacing: var(--letter-spacing-base);
-    color: #209CD8;
+.banner-action-span {
+  @include fluid-font(15px, 100%);
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #FFFFFF;
 }
 
-.train-condent{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-train-content);
-    font-size: var(--font-size-train-content);
-    line-height: var(--line-height-train-content);
-    letter-spacing: var(--letter-spacing-base);
-    color: #454545;
+// Train styles (section 2)
+.train-title {
+  @include fluid-font(38px, 48px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #209CD8;
 }
 
-// metro corporation styles ( section 3 )
-.metro-corporation-title{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-metro-corporation);
-    font-size: var(--font-size-metro-corporation);
-    line-height: var(--line-height-metro-corporation);
-    letter-spacing: var(--letter-spacing-base);
-    color: #FFFFFF;
+.train-condent {
+  @include fluid-font(20px, 32px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0;
+  color: #454545;
 }
 
-.metro-corporation-span{
-    font-weight: var(--font-weight-metro-corporation-span) !important;
+// Metro corporation styles (section 3)
+.metro-corporation-title {
+  @include fluid-font(38px, 48px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #FFFFFF;
 }
 
-.metro-corporation-content{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-metro-corporation-content);
-    font-size: var(--font-size-metro-corporation-content);
-    line-height: var(--line-height-metro-corporation-content);
-    letter-spacing: var(--letter-spacing-base);
-    color: #FFFFFF;
+.metro-corporation-span {
+  font-weight: 700 !important;
 }
 
-// smart banner styles ( section 4 )
-.smart-banner-title{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-smart-banner);
-    font-size: var(--font-size-smart-banner);
-    line-height: var(--line-height-smart-banner);
-    letter-spacing: var(--letter-spacing-base);
-    color: #FFFFFF;
+.metro-corporation-content {
+  @include fluid-font(20px, 32px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0;
+  color: #FFFFFF;
 }
 
-.smart-banner-title-span{
-    font-weight: var(--font-weight-smart-banner-span) !important;
+// Smart banner styles (section 4)
+.smart-banner-title {
+  @include fluid-font(38px, 48px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #FFFFFF;
 }
 
-.smart-banner-subtitle{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-smart-banner-subtitle);
-    font-size: var(--font-size-smart-banner-subtitle);
-    line-height: var(--line-height-smart-banner-subtitle);
-    letter-spacing: var(--letter-spacing-base);
-    color: #C3C4FF;
+.smart-banner-title-span {
+  font-weight: 700 !important;
 }
 
-.smart-banner-content{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-smart-banner-content);
-    font-size: var(--font-size-smart-banner-content);
-    line-height: var(--line-height-smart-banner-content);
-    letter-spacing: var(--letter-spacing-base);
-    color: #FFFFFF;
-}
-// Benifits styles ( section 5 )
-.benifits-title{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-benifits);
-    font-size: var(--font-size-benifits);
-    line-height: var(--line-height-benifits);
-    letter-spacing: var(--letter-spacing-base);
-    color: #454545;
+.smart-banner-subtitle {
+  @include fluid-font(22px, 32px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #C3C4FF;
 }
 
-.benifits-title-span{
-    font-weight: var(--font-weight-benifits-span) !important;
+.smart-banner-content {
+  @include fluid-font(20px, 32px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #FFFFFF;
 }
 
-.benifits-item-title{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-benifits-item-title);
-    font-size: var(--font-size-benifits-item-title);
-    line-height: var(--line-height-benifits-item-title);
-    letter-spacing: var(--letter-spacing-base);
-    color: #209CD8;
-}
-.benifits-item-content{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-benifits-item-content);
-    font-size: var(--font-size-benifits-item-content);
-    line-height: var(--line-height-benifits-item-content);
-    letter-spacing: var(--letter-spacing-base);
-    color: #454545;
+// Benefits styles (section 5)
+.benifits-title {
+  @include fluid-font(38px, 48px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #454545;
 }
 
-// Case Study Carousel styles ( section 6 )
-.case-study-title{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-case-study);
-    font-size: var(--font-size-case-study);
-    line-height: var(--line-height-case-study);
-    letter-spacing: var(--letter-spacing-base);
-    color: #3B4144;
+.benifits-title-span {
+  font-weight: 700 !important;
 }
 
-.case-study-subtitle{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-case-study-subtitle);
-    font-size: var(--font-size-case-study-subtitle);
-    line-height: var(--line-height-case-study-subtitle);
-    letter-spacing: var(--letter-spacing-base);
-    color: #FFFFFF;
+.benifits-item-title {
+  @include fluid-font(15px, 25px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #209CD8;
 }
 
-.case-study-content{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-case-study-content);
-    font-size: var(--font-size-case-study-content);
-    line-height: var(--line-height-case-study-content);
-    letter-spacing: var(--letter-spacing-base);
-    color: #FFFFFF;
+.benifits-item-content {
+  @include fluid-font(18px, 26px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0;
+  color: #454545;
 }
 
-.case-study-action-span{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-case-study-action-span);
-    font-size: var(--font-size-case-study-action-span);
-    line-height: var(--line-height-case-study-action-span);
-    letter-spacing: var(--letter-spacing-base);
-    color: #FFFFFF;
+// Case Study Carousel styles (section 6)
+.case-study-title {
+  @include fluid-font(38px, 48px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #3B4144;
+}
+
+.case-study-subtitle {
+  @include fluid-font(30px, 40px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+
+.case-study-content {
+  @include fluid-font(20px, 32px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+
+.case-study-action-span {
+  @include fluid-font(15px, 100%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #FFFFFF;
 }

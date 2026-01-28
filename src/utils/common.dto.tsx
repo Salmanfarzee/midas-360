@@ -1,8 +1,10 @@
-export type benifitsItemProp = {
+import { marginMap } from "./constants";
+
+export interface benifitsItemProp {
   title: string;
   description: string;
-  marginTop: string;
-};
+  marginTop: keyof typeof marginMap; // 👈 restricts to "4.1" | "5.6"
+}
 
 export type caseStudyItemProp = {
   title: string;
