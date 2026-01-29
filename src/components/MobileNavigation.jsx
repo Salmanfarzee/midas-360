@@ -11,7 +11,7 @@ const MobileNavigation = ({ scrolled }) => {
       <a href="#" className="hover:underline">
         How it works
       </a>
-      <a href="#" className="hover:underline">
+      <a href="/insights" className="hover:underline">
         Insights
       </a>
 
@@ -28,7 +28,7 @@ const MobileNavigation = ({ scrolled }) => {
         </div>
       </details>
 
-      <a href="#" className="hover:underline">
+      <a href="/contactus" className="hover:underline">
         Contact Us
       </a>
     </nav>

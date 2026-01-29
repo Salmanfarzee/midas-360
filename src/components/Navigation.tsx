@@ -17,7 +17,7 @@ const Navigation = ({ scrolled ,isHome}: NavigationProps) => {
         How it works
       </a>
       <a
-        href="#"
+        href="/insights"
         className="hover:underline underline-offset-[6px] decoration-white"
       >
         Insights
