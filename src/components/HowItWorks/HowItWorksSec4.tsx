@@ -3,7 +3,7 @@ import styles from "./HowItWorks.module.scss";
 
 const HowItWorksSec4: React.FC = () => {
   return (
-    <section className={`  ${styles.HowItWorksSec4}`}>
+    <section className={`  ${styles.HowItWorksSec4} mb-8`}>
       {/* Title and description */}
       <div className="px-[6.9vw] py-5 mt-12">
         <h2 className="  pb-3">midas360 – KPIs </h2>
