@@ -1,0 +1,65 @@
+@mixin fluid-font($size, $line, $base: 1440px) {
+  font-size: calc(#{$size} * (100vw / #{$base}));
+  line-height: calc(#{$line} * (100vw / #{$base}));
+}
+
+.bannerTitle {
+  font-family: "Poppins", sans-serif;
+  @include fluid-font(55px, 68px);
+  font-weight: 500;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+.HowItWorksSec2 {
+  h2 {
+    font-family: "Poppins", sans-serif;
+    @include fluid-font(38px, 48px);
+    font-weight: 500;
+    color: #209cd8;
+  }
+  p {
+    font-family: "Poppins", sans-serif;
+    @include fluid-font(20px, 32px);
+    font-weight: 300;
+    color: #454545;
+  }
+}
+
+.HowItWorksSec3 {
+  background-color: #2d2f77;
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+    @include fluid-font(38px, 48px);
+    font-weight: 500;
+    color: #209cd8;
+  }
+  h6 {
+    font-family: "Poppins", sans-serif;
+    @include fluid-font(22px, 32px);
+    font-weight: 500;
+    color: #ffffff;
+  }
+  p {
+    font-family: "Poppins", sans-serif;
+    @include fluid-font(20px, 32px);
+    font-weight: 300;
+    color: #ffffff;
+  }
+}
+
+.HowItWorksSec4 {
+  h2 {
+    font-family: "Poppins", sans-serif;
+    @include fluid-font(38px, 48px);
+    font-weight: 500;
+    color: #209cd8;
+  }
+  p {
+    font-family: "Poppins", sans-serif;
+    @include fluid-font(20px, 32px);
+    font-weight: 300;
+    color: #454545;
+  }
+}

@@ -8,7 +8,7 @@ const MobileNavigation = ({ scrolled }) => {
         scrolled ? "bg-white text-black" : "bg-transparent text-white"
       )}
     >
-      <a href="#" className="hover:underline">
+      <a href="/howitworks" className="hover:underline">
         How it works
       </a>
       <a href="/insights" className="hover:underline">

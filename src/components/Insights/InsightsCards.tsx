@@ -25,7 +25,7 @@ const InsightsCards: React.FC = () => {
   return (
     <section className={`py-12 px-[6.9vw] ${styles.InsightsCardsContainer}`}  >
       {/* Title */}
-      <h2 className="text-3xl font-bold text-gray-900 mb-8">Section Title</h2>
+      <h2 className=" mb-8">Case Study</h2>
 
       {/* Cards Grid */}
       <div className={`grid grid-cols-1 md:grid-cols-2 gap-32 `}>

@@ -9,9 +9,9 @@ const Navigation = ({ scrolled ,isHome}: NavigationProps) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <nav className="nav-text hidden md:flex flex space-x-6 mr-[6.9vw] self-center text-center px-4 py-2 rounded-md">
+    <nav className="nav-text hidden md:flex flex space-x-6 self-center text-center px-4 py-2 rounded-md">
       <a
-        href="#"
+        href="/howitworks"
         className="hover:underline underline-offset-[6px] decoration-white"
       >
         How it works
