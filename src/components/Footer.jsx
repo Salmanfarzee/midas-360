@@ -103,7 +103,7 @@ const Footer = () => {
       </footer>
       {/* mobile footer */}
       <footer className="bg-[#D2D2D24D] overflow-auto block md:hidden">
-        <div className="w-full mx-auto grid grid-cols-1 flex md:grid-cols-3 gap-2 mb-[30px]">
+        <div className="w-full mx-auto grid-cols-1 flex md:grid-cols-3 gap-2 mb-[30px]">
           {/* Logo */}
           <div className="flex flex-col items-start w-[20%]">
             <div className="relative w-[47px] h-[23px] ml-[6.9vw] mt-[3.5vh] mb-[3.3vh]">
@@ -118,7 +118,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="flex items-center flex-col w-[30%]">
+          <div className="flex items-center flex-col w-[35%]">
             <p className="footer-quicklinks mt-[4vh] ml-[2vw]">Quick links</p>
             <div className="grid grid-cols-1 gap-1 ml-[2vw] mt-[.5vh]">
               <div className="h-[12px]">
@@ -145,7 +145,7 @@ const Footer = () => {
           </div>
 
           {/* Get in Touch */}
-          <div className="flex flex-col w-[50%]">
+          <div className="flex flex-col w-[45%]">
             <p className="footer-quicklinks mt-[4vh] ml-[3vw]">Get in touch</p>
 
             <div className="flex flex-row ml-[3vw] mt-[2vh]">
@@ -184,9 +184,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className="w-[367px] ml-[6.9vw] footer-content">
+        <p className=" ml-[6.9vw] footer-content">
           midas360 is an AI-powered analytics platform that transforms metro
-          rail operations through predictive maintenance and data-driven
+          rail <br/>operations through predictive maintenance and data-driven
           decision-making.
         </p>
         <p className="ml-[6.9vw] mt-[1.4vh] footer-copyrights">

@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 import Navigation from "./Navigation";
 import MobileNavigation from "./MobileNavigation";
 
-
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -29,11 +28,13 @@ const Header: React.FC = () => {
     <header
       className={clsx(
         "fixed top-0 left-0 w-full z-50 md:h-[110px] h-[75px] transition-all duration-300 flex items-center",
-        isHome
-          ? scrolled
-            ? "bg-white shadow-md text-black"
-            : "bg-transparent text-white"
-          : "bg-white shadow-md text-black"
+        menuOpen
+          ? "bg-white shadow-md text-black"
+          : isHome
+            ? scrolled
+              ? "bg-white shadow-md text-black"
+              : "bg-transparent text-white"
+            : "bg-white shadow-md text-black",
       )}
     >
       <div className="w-full flex flex-row justify-between items-center px-[6vw]">
@@ -56,15 +57,15 @@ const Header: React.FC = () => {
 
         {/* Mobile logo */}
         <a href="/" className="block md:hidden">
-          {isHome && !scrolled ? (
+          {menuOpen || !(isHome && !scrolled) ? (
             <img
-              src="/assets/midas-mobile-1.svg"
+              src="/assets/midas-mobile-2.svg"
               alt="Midas360 Mobile logo"
               className="transition-all duration-300 ease-in-out"
             />
           ) : (
             <img
-              src="/assets/midas-mobile-2.svg"
+              src="/assets/midas-mobile-1.svg"
               alt="Midas360 Mobile logo"
               className="transition-all duration-300 ease-in-out"
             />
@@ -75,16 +76,26 @@ const Header: React.FC = () => {
         <Navigation scrolled={scrolled} isHome={isHome} />
 
         {/* Mobile menu button */}
-        <button
-          className="md:hidden focus:outline-none"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          <img src="/assets/mobile-menu.svg" alt="Menu Icon" />
-        </button>
+
+        {menuOpen || !(isHome && !scrolled) ? (
+          <button
+            className="md:hidden focus:outline-none"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <img src="/assets/mobile-menu.svg" alt="Menu Icon" />
+          </button>
+        ) : (
+          <button
+            className="md:hidden focus:outline-none"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <img src="/assets/menu-white.svg" alt="Menu Icon" />
+          </button>
+        )}
       </div>
 
       {/* Mobile Nav */}
-      {menuOpen && <MobileNavigation scrolled={scrolled} />}
+      {menuOpen && <MobileNavigation />}
     </header>
   );
 };

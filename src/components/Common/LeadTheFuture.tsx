@@ -49,7 +49,7 @@ const LeadTheFuture = () => {
         <p className="lead-the-future-title md:mt-[94px] mt-[50px] ml-[6.9vw]">
           Lead the future
         </p>
-        <p className="lead-the-future-content ml-[6.9vw] mt-[10px]">
+        <p className="lead-the-future-content ml-[6.9vw] md:mt-[10px] mt-[2px]">
           {isMobile ? (
             "of urban mobility with midas360 at the core of your metro operations."
           ) : (
