@@ -10,6 +10,7 @@ export type caseStudyItemProp = {
   title: string;
   content: string;
   bgImage: string;
+  bgImageMobile: string;
   actionText: string;
   actionUrl: string;
 };

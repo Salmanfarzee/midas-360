@@ -1,8 +1,11 @@
+import { useDevice } from "../Context/AppContext";
+
 const LeadTheFuture = () => {
-  const TextField = ({ label, placeholder, marginTop, isMobile }:any) => {
+  const { isMobile } = useDevice();
+  const TextField = ({ label, placeholder, marginTop, isMobile }: any) => {
     return (
       <div
-        className="md:w-[467px] h-[79.14px] flex flex-col"
+        className="md:w-[467px] md:h-[79.14px] h-[60px] flex flex-col"
         style={{ marginTop: marginTop }}
       >
         <p className="lead-the-future-form-label">
@@ -41,44 +44,51 @@ const LeadTheFuture = () => {
     );
   };
   return (
-    <section className="h-[636px] w-full grid grid-cols-1 md:grid-cols-2">
-      <div className="flex flex-col mb[10vh]">
-        <p className="lead-the-future-title mt-[94px] ml-[6.9vw]">
+    <section className="h-[360px] md:h-[636px] w-full grid grid-cols-1 md:grid-cols-2">
+      <div className="flex flex-col md:mb-[10vh]">
+        <p className="lead-the-future-title md:mt-[94px] mt-[50px] ml-[6.9vw]">
           Lead the future
         </p>
         <p className="lead-the-future-content ml-[6.9vw] mt-[10px]">
-          of urban mobility with midas360 at <br /> the core of your metro
-          operations.
+          {isMobile ? (
+            "of urban mobility with midas360 at the core of your metro operations."
+          ) : (
+            <>
+              of urban mobility with midas360 at <br />
+              the core of your metro operations.
+            </>
+          )}
         </p>
+
         <img
           src="/assets/lead-the-future.png"
           alt="Lead the future"
-          className="w-[608.16px] h-[221.59px] mt-[69px] mb-[97.41px]"
+          className="w-[608.16px] h-[221.59px] mt-[69px] mb-[97.41px] md:block hidden"
         />
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col  md:mt-0 mx-[6.9vw]  md:mb-[0vh] mb-[3.5vh] md:mx-0">
         <p className="lead-the-future-form-title mt-[107px]">
           Connect with us for a consultation
         </p>
         <TextField
-          marginTop={"31px"}
+          marginTop={"10px"}
           label={"Name"}
           placeholder={"Enter your name"}
           isMobile={false}
         />
         <TextField
-          marginTop={"25.86px"}
+          marginTop={"10px"}
           label={"Business email ID"}
           placeholder={"Enter your Business email ID"}
           isMobile={false}
         />
         <TextField
-          marginTop={"24.06px"}
+          marginTop={"10px"}
           label={"Mobile"}
           placeholder={"12345 67890"}
           isMobile={true}
         />
-        <div className="w-[11.3vw] h-[48px] bg-[#209CD8] rounded-[50px] flex items-center justify-center mt-[3.4vh] cursor-pointer hover:opacity-90">
+        <div className="md:w-[11.3vw] md:h-[48px] w-[65px] h-[22px] bg-[#209CD8] rounded-[50px] flex items-center justify-center md:mt-[3.4vh] mt-[1.5vh] cursor-pointer hover:opacity-90">
           <p className="lead-the-future-submit">Submit</p>
         </div>
       </div>

@@ -6,10 +6,10 @@
 // Banner styles (section 1)
 .banner-title {
   @include fluid-font(55px, 62px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .banner-span {
@@ -18,31 +18,31 @@
 
 .banner-subtitle {
   @include fluid-font(20px, 32px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   letter-spacing: 0;
-  color: #EFEFEF;
+  color: #efefef;
 }
 
 .banner-action-span {
   @include fluid-font(15px, 100%);
   font-weight: 700;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 // Train styles (section 2)
 .train-title {
   @include fluid-font(38px, 48px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   letter-spacing: 0;
-  color: #209CD8;
+  color: #209cd8;
 }
 
 .train-condent {
   @include fluid-font(20px, 32px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   letter-spacing: 0;
   color: #454545;
@@ -51,10 +51,10 @@
 // Metro corporation styles (section 3)
 .metro-corporation-title {
   @include fluid-font(38px, 48px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .metro-corporation-span {
@@ -63,19 +63,19 @@
 
 .metro-corporation-content {
   @include fluid-font(20px, 32px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 // Smart banner styles (section 4)
 .smart-banner-title {
   @include fluid-font(38px, 48px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .smart-banner-title-span {
@@ -84,24 +84,24 @@
 
 .smart-banner-subtitle {
   @include fluid-font(22px, 32px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   letter-spacing: 0;
-  color: #C3C4FF;
+  color: #c3c4ff;
 }
 
 .smart-banner-content {
   @include fluid-font(20px, 32px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 // Benefits styles (section 5)
 .benifits-title {
   @include fluid-font(38px, 48px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   letter-spacing: 0;
   color: #454545;
@@ -113,15 +113,15 @@
 
 .benifits-item-title {
   @include fluid-font(15px, 25px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   letter-spacing: 0;
-  color: #209CD8;
+  color: #209cd8;
 }
 
 .benifits-item-content {
   @include fluid-font(18px, 26px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   letter-spacing: 0;
   color: #454545;
@@ -130,32 +130,142 @@
 // Case Study Carousel styles (section 6)
 .case-study-title {
   @include fluid-font(38px, 48px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   letter-spacing: 0;
-  color: #3B4144;
+  color: #3b4144;
 }
 
 .case-study-subtitle {
   @include fluid-font(30px, 40px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .case-study-content {
   @include fluid-font(20px, 32px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .case-study-action-span {
   @include fluid-font(15px, 100%);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 16.17px !important;
+    line-height: 20.48px !important;
+  }
+
+  .banner-span {
+    font-weight: 700 !important;
+  }
+
+  .banner-subtitle {
+    font-size: 9px !important;
+    line-height: 12px !important;
+  }
+  .howitworks {
+    p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-size: 7px;
+      line-height: 100%;
+      color: #ffffff;
+    }
+  }
+
+  // Train styles (section 2)
+  .train-title {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+
+  .train-condent {
+    font-size: 9px !important;
+    line-height: 14px !important;
+  }
+
+  // Metro corporation styles (section 3)
+  .metro-corporation-title {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+
+  .metro-corporation-span {
+    font-size: 14px !important;
+    line-height: 18px !important;
+    font-weight: 700 !important;
+  }
+
+  .metro-corporation-content {
+    font-size: 9px !important;
+    line-height: 14px !important;
+  }
+
+  // Smart banner styles (section 4)
+  .smart-banner-title {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+
+  .smart-banner-title-span {
+    font-weight: 700 !important;
+  }
+
+  .smart-banner-subtitle {
+    font-size: 9.36px !important;
+    line-height: 12.51px !important;
+  }
+
+  .smart-banner-content {
+    font-size: 9.38px !important;
+    line-height: 11.47px !important;
+  }
+
+  // Benefits styles (section 5)
+  .benifits-title {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+
+  .benifits-title-span {
+    font-weight: 700 !important;
+  }
+
+  .benifits-item-title {
+    font-size: 8px !important;
+    line-height: 9.53px !important;
+  }
+
+  .benifits-item-content {
+    font-size: 9px !important;
+    line-height: 14px !important;
+    font-weight: 400 !important;
+  }
+
+  // Case Study Carousel styles (section 6)
+  .case-study-title {
+    font-size: 14px !important;
+    line-height: 12.5px !important;
+  }
+
+  .case-study-subtitle {
+    font-size: 9px !important;
+    line-height: 13px !important;
+  }
+
+  .case-study-action-span {
+    font-size: 6px !important;
+    line-height: 10px !important;
+  }
 }

@@ -5,50 +5,85 @@
 }
 
 .lead-the-future-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   @include fluid-font(67.01px, 73.71px);
-  color: #209CD8;
+  color: #209cd8;
 }
 
 .lead-the-future-content {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   @include fluid-font(25px, 35px);
   color: #454545;
 }
 
 .lead-the-future-form-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   @include fluid-font(25px, 35px);
   color: #454545;
 }
 
 .lead-the-future-form-label {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   @include fluid-font(18px, 30.75px);
-//   letter-spacing: -2px;
+  //   letter-spacing: -2px;
   color: #606060;
 }
 
 .lead-the-future-form-label-required {
-  color: #FF4B4B;
+  color: #ff4b4b;
 }
 
 .lead-the-future-form-value {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   @include fluid-font(14px, 30.75px);
-//   letter-spacing: -2px;
+  //   letter-spacing: -2px;
   color: #818181;
 }
 
 .lead-the-future-submit {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   @include fluid-font(20px, 35px);
-//   letter-spacing: 0px;
-  color: #FFFFFF;
+  //   letter-spacing: 0px;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .lead-the-future-title {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .lead-the-future-content {
+    font-size: 8px !important;
+    line-height: 11px !important;
+  }
+
+  .lead-the-future-form-title {
+    display: none !important;
+  }
+
+  .lead-the-future-form-label {
+    font-size: 9px !important;
+    line-height: 12.45px !important;
+  }
+
+  .lead-the-future-form-label-required {
+    color: #ff4b4b;
+  }
+
+  .lead-the-future-form-value {
+    font-size: 9px !important;
+    line-height: 14px !important;
+  }
+
+  .lead-the-future-submit {
+    font-size: 8.61px !important;
+    line-height: 15.61px !important;
+  }
 }

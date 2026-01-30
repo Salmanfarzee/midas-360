@@ -1,44 +1,71 @@
-.footer-content{
-    font-family: var(--font-family-base);    
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-footer);
-    line-height: var(--line-height-footer);
-    letter-spacing: var(--letter-spacing-base);  
+.footer-content {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0;
     color: #454545;
 }
 
-.footer-copyrights{
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-footer);
-    line-height: var(--line-height-copyrights-footer);
-    letter-spacing: var(--letter-spacing-base);  
+.footer-copyrights {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0;
     color: #838383;
 }
 
-.footer-quicklinks{
-    font-family: var(--font-family-base);    
-    font-size: var(--font-size-quicklinks-footer);
-    font-weight: var(--font-weight-quicklinks-footer);
-    line-height: var(--line-height-quicklinks-footer);
-    letter-spacing: var(--letter-spacing-base);  
+.footer-quicklinks {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
     color: #454545;
 }
 
-.footer-quicklinks-content{
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-footer);
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-footer);
-    letter-spacing: var(--letter-spacing-base);
+.footer-quicklinks-content {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0;
     color: #606060;
 }
 
-.footer-disclaimers{
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-disclaimers);
-    line-height: var(--line-height-quicklinks-footer);
-    letter-spacing: var(--letter-spacing-base);  
+.footer-disclaimers {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0;
     color: #454545;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        font-size: 7px !important;
+        line-height: 10px !important;
+    }
+
+    .footer-quicklinks {
+        font-size: 9px !important;
+        line-height: 6.25px !important;
+    }
+
+    .footer-quicklinks-content {
+        font-size: 6px !important;
+        line-height: 6px !important;
+    }
+
+    .footer-disclaimers {
+        font-size: 4px !important;
+        line-height: 7px !important;
+    }
+    .footer-copyrights {
+          font-size: 4px !important;
+            line-height: 7px !important;
+
+}
 }
