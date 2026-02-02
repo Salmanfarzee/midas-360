@@ -277,6 +277,49 @@
     font-size: 8.85px;
     line-height: 15.18px;
     color: #838383;
+  }
+}
 
+// dynamic-margin-NE
+@media (min-width: 1000px) {
+  .margin-dynamic-NE {
+    margin-left: 2%;
+  }
+}
+@media (min-width: 1100px) {
+  .margin-dynamic-NE {
+    margin-left: 2%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .margin-dynamic-NE {
+    margin-left: 4%;
+  }
+}
+@media (min-width: 1250px) {
+  .margin-dynamic-NE {
+    margin-left: 5.5%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .margin-dynamic-NE {
+    margin-left: 6.4%;
+  }
+}
+@media (min-width: 1400px) {
+  .margin-dynamic-NE {
+    margin-left: 8.3%;
+  }
+}
+@media (min-width: 1500px) {
+  .margin-dynamic-NE {
+    margin-left: 9%;
+  }
+}
+@media (min-width: 1600px) {
+  .margin-dynamic-NE {
+    margin-left: 10%;
   }
 }

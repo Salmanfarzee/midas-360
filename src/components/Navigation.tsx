@@ -55,7 +55,7 @@ const Navigation = ({ scrolled ,isHome}: NavigationProps) => {
               : "opacity-0 scale-95 pointer-events-none"
           } ${isHome && scrolled ? "bg-white shadow-md text-black" : isHome ? "bg-transparent text-white" : "bg-white shadow-md text-black"}`}
         >
-          <a href="#" className="block px-4">
+          <a href="/newsandevents" className="block px-4">
             News and Events
           </a>
           <a href="/leadership" className="block px-4">

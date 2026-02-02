@@ -1,0 +1,52 @@
+@mixin fluid-font($size, $line, $base: 1440px) {
+  font-size: calc(#{$size} * (100vw / #{$base}));
+  line-height: calc(#{$line} * (100vw / #{$base}));
+}
+
+.bannerTitle {
+  font-family: "Poppins", sans-serif;
+  @include fluid-font(55px, 68px);
+  font-weight: 500;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+.NEtitle {
+  @include fluid-font(28px, 38px);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #454545;
+}
+
+.NEcondent {
+  @include fluid-font(20px, 32px);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0;
+  color: #454545;
+}
+.NEReadmore {
+  @include fluid-font(15px, 20px);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #209cd8;
+}
+
+@media (max-width: 768px) {
+  .NEtitle {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+
+  .NEcondent {
+    font-size: 9px !important;
+    line-height: 14px !important;
+  }
+
+  .NEReadmore {
+    font-size: 9px !important;
+    line-height: 14px !important;
+  }
+}
