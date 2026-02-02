@@ -1,0 +1,24 @@
+@mixin fluid-font($size, $line, $base: 1440px) {
+  font-size: calc(#{$size} * (100vw / #{$base}));
+  line-height: calc(#{$line} * (100vw / #{$base}));
+}
+.LeadTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  @include fluid-font(67px, 73.71px);
+  color: #209cd8;
+}
+
+.LeadDesignation {
+  font-family: "Poppins", sans-serif;
+  @include fluid-font(25px, 35px);
+  font-weight: 500;
+  color: #454545;
+}
+
+.LeadContent {
+  font-family: "Poppins", sans-serif;
+  @include fluid-font(20px, 32px);
+  font-weight: 300;
+  color: #454545;
+}

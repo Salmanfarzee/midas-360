@@ -77,6 +77,9 @@ const LeadershipAbout = () => {
           className="h-[372px] mt-[5.6vh] mb-[5.4vh] "
         />
       </div>
+      <div>
+        <a href="/leadershipdetail" className="text-black pointer " >readmore</a>
+      </div>
     </section>
   );
 };

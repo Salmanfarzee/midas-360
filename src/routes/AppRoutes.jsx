@@ -5,6 +5,7 @@ import ContactUsPage from "../pages/ContactUsPage";
 import InsightsPage from "../pages/InsightsPage";
 import HowItWorksPage from "../pages/HowItWorksPage";
 import LeadershipPage from "../pages/LeadershipPage";
+import LeadershipDetailPage from "../pages/LeadershipDetailPage";
 
 const AppRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const AppRoutes = () => {
       <Route path="/insights" element={<InsightsPage />} />
       <Route path="/howitworks" element={<HowItWorksPage />} />
       <Route path="/leadership" element={<LeadershipPage />} />
+      <Route path="/leadershipdetail" element={<LeadershipDetailPage />} />
     </Routes>
   );
 };
