@@ -58,7 +58,7 @@ const Navigation = ({ scrolled ,isHome}: NavigationProps) => {
           <a href="#" className="block px-4">
             News and Events
           </a>
-          <a href="#" className="block px-4">
+          <a href="/leadership" className="block px-4">
             Leadership
           </a>
         </div>
