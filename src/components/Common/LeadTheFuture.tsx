@@ -13,10 +13,10 @@ const LeadTheFuture = () => {
           <span className="lead-the-future-form-label-required">*</span>
         </p>
         {isMobile ? (
-          <div className="w-full h-[41px] flex items-center">
+          <div className="w-full md:h-[41px] flex items-center">
             {/* Country Code Dropdown */}
             <select
-              className="lead-the-future-form-value w-[63px] h-[41px] border-[0.64px] border-[#D3D3D3] rounded-[5.13px] text-sm px-2 bg-white"
+              className="lead-the-future-form-value w-[63px] md:h-[41px] border-[0.64px] border-[#D3D3D3] rounded-[5.13px] text-sm px-2 bg-white"
               defaultValue="+91"
             >
               <option value="+91">+91</option>
@@ -30,14 +30,14 @@ const LeadTheFuture = () => {
             <input
               type="tel"
               placeholder="Enter mobile number"
-              className="lead-the-future-form-value w-[395px] h-[41px] ml-[9px] border-[0.64px] border-[#D3D3D3] rounded-[5.13px]"
+              className="lead-the-future-form-value w-[395px] md:h-[41px] ml-[9px] border-[0.64px] border-[#D3D3D3] rounded-[5.13px]"
             />
           </div>
         ) : (
           <input
             type="text"
             placeholder={placeholder}
-            className="lead-the-future-form-value w-full h-[41px] mt-[7.14px] rounded-[5.13px] border-[0.64px]  border-[#D3D3D3] opacity-100"
+            className="lead-the-future-form-value w-full md:h-[41px] mt-[7.14px] rounded-[5.13px] border-[0.64px]  border-[#D3D3D3] opacity-100"
           />
         )}
       </div>

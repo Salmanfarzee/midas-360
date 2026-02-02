@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import styles from "../ContactUs/ContactUs.module.scss";
-import trainweb from "../../../public/assets/contact-train-web.svg";
-import trainmob from "../../../public/assets/contact-train-mobile.svg";
+
 
 interface ContactFormData {
   name: string;
@@ -63,12 +61,12 @@ const ContactUs: React.FC = () => {
           )}
         </p>
         {isMobile ? (
-          <div className="w-full h-[41px] flex items-center">
+          <div className="w-full md:md:h-[41px] flex items-center">
             <select
               name="countryCode"
               value={formData.countryCode}
               onChange={handleChange}
-              className="lead-the-future-form-value w-[63px] h-[41px] border-[0.64px] border-[#D3D3D3] rounded-[5.13px] text-sm px-2 bg-white"
+              className="lead-the-future-form-value w-[63px] md:md:h-[41px] border-[0.64px] border-[#D3D3D3] rounded-[5.13px] text-sm px-2 bg-white"
             >
               <option value="+91">+91</option>
               <option value="+1">+1</option>
@@ -81,7 +79,7 @@ const ContactUs: React.FC = () => {
               value={formData.mobile}
               onChange={handleChange}
               placeholder="Enter mobile number"
-              className="lead-the-future-form-value w-[395px] h-[41px] ml-[9px] border-[0.64px] border-[#D3D3D3] rounded-[5.13px]"
+              className="lead-the-future-form-value w-[395px] md:md:h-[41px] ml-[9px] border-[0.64px] border-[#D3D3D3] rounded-[5.13px]"
             />
           </div>
         ) : (
@@ -91,7 +89,7 @@ const ContactUs: React.FC = () => {
             value={(formData as any)[name]}
             onChange={handleChange}
             placeholder={placeholder}
-            className="lead-the-future-form-value w-full h-[41px] mt-[7.14px] rounded-[5.13px] border-[0.64px] border-[#D3D3D3]"
+            className="lead-the-future-form-value w-full md:md:h-[41px] mt-[7.14px] rounded-[5.13px] border-[0.64px] border-[#D3D3D3]"
           />
         )}
       </div>
