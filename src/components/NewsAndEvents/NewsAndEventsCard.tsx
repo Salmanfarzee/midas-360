@@ -58,7 +58,6 @@ const NewsAndEventsCard = () => {
                     alt="Arrow Icon"
                     className="w-4 h-4  inline-block mr-2"
                   />
-
                   Read more
                 </a>
               </div>

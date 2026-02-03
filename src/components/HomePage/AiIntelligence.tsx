@@ -9,7 +9,7 @@ const AiIntelligence = () => {
         />
       </div>
       <div>
-        <div className="flex items-center md:items-start flex-col mt-[2.7vh]">
+        <div className="flex items-center md:items-start flex-col md:mt-16 mt-[2.7vh]">
           <p className="train-title md:block hidden">
             AI Intelligence for <br />
             Smarter Metro Rails
