@@ -18,7 +18,7 @@ const Card: React.FC<CardProps> = ({ title, img }) => {
   />
 
   {/* Wrap title + link in a container anchored to bottom */}
-  <div className="absolute bottom-[30px] left-0 right-0 px-6 z-20">
+  <div className="absolute md:bottom-[30px] bottom-[20px] left-0 right-0 px-6 z-20">
     <h6 className={` ${styles.InsightsCardTitle} mb-4`}>
       {title}
     </h6>
@@ -49,7 +49,7 @@ const InsightsCards: React.FC = () => {
   ];
 
   return (
-    <section className={`py-12 mb-24 px-[6.9vw] ${styles.InsightsCardsContainer}`}>
+    <section className={`md:py-12 py-8 md:mb-24 mb-8 px-[6.9vw] ${styles.InsightsCardsContainer}`}>
       {/* Title */}
       <h2 className=" mb-8">Case Study</h2>
 

@@ -89,6 +89,11 @@
 }
 
 @media (max-width: 768px) {
+  .bannerTitle {
+    font-size: 18px !important;
+    line-height: 98px !important;
+  }
+
   .traintitle {
     font-size: 14px !important;
     line-height: 18px !important;
@@ -102,5 +107,35 @@
   .NEReadmore {
     font-size: 9px !important;
     line-height: 14px !important;
+  }
+
+  .ourLeadershipSection {
+    .leaderWrapper {
+      // @include fluid-height(300px) !important; // match background height
+    }
+
+    .leaderBg {
+      width: 200px !important;
+      height: 210px !important;
+    }
+    .leaderImg {
+      top: 30px !important;
+      left: 40px !important;
+
+      width: 140px !important;
+      height: 160px !important;
+    }
+    h5 {
+      font-size: 14px !important;
+      line-height: 18px !important;
+    }
+    p {
+      font-size: 9px !important;
+      line-height: 14px !important;
+    }
+    .leadQuote {
+      font-size: 15px !important;
+      line-height: 24px !important;
+    }
   }
 }

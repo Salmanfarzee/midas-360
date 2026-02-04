@@ -20,7 +20,7 @@
   }
   .InsightsCards {
     border-radius: 7.1px;
-    
+
     h6 {
       font-family: "Poppins", sans-serif;
       @include fluid-font(20.12px, 26.83px);
@@ -42,6 +42,36 @@
       font-weight: 700;
       letter-spacing: 0%;
       color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .bannerTitle {
+    font-size: 18px !important;
+    line-height: 98px !important;
+  }
+  .InsightsCardsContainer {
+    h2 {
+      font-size: 14px !important;
+      line-height: 26px !important;
+    }
+    .InsightsCards {
+      border-radius: 7.1px !important;
+
+      h6 {
+        font-size: 7px !important;
+        line-height: 100% !important;
+      }
+      .InsightsCardTitle {
+        font-size: 13px !important;
+        line-height: 17px !important;
+      }
+
+      .InsightsCardLink {
+        font-size: 7px !important;
+        line-height: 100% !important;
+      }
     }
   }
 }
