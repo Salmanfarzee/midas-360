@@ -1,0 +1,69 @@
+@mixin fluid-font($size, $line, $base: 1440px) {
+  font-size: calc(#{$size} * (100vw / #{$base}));
+  line-height: calc(#{$line} * (100vw / #{$base}));
+}
+@mixin fluid-width($width, $base: 1440px) {
+  width: calc(#{$width} * (100vw / #{$base}));
+}
+
+@mixin fluid-height($height, $base: 1440px) {
+  height: calc(#{$height} * (100vw / #{$base}));
+}
+
+.caseDetailBanner {
+  @include fluid-height(660px);
+
+  .caseStudyBannerHeight {
+    @include fluid-height(400px);
+  }
+  .caseStudyTitle {
+    font-family: "Poppins", sans-serif;
+    @include fluid-font(30px, 40px);
+    font-weight: 500;
+    color: #454545;
+  }
+  .caseStudySubtitle {
+    font-family: "Poppins", sans-serif;
+    @include fluid-font(20px, 32px);
+    font-weight: 400;
+    letter-spacing: 0%;
+    color: #454545;
+  }
+  .caseStudyAuthor {
+    font-family: "Poppins", sans-serif;
+    @include fluid-font(14px, 32px);
+    font-weight: 400;
+    letter-spacing: 0%;
+    color: #797979;
+  }
+  .caseSudyImage {
+    @include fluid-width(717px);
+  }
+}
+.caseDetailcontent {
+  h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    @include fluid-font(28px, 38px);
+    color: #454545;
+    padding: 20px 0px 20px 0px;
+  }
+  span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    @include fluid-font(20px, 32px);
+    color: #454545;
+  }
+  p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    @include fluid-font(20px, 32px);
+    color: #454545;
+  }
+  li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    @include fluid-font(20px, 32px);
+    color: #454545;
+  }
+}

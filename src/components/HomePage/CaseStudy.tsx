@@ -72,7 +72,7 @@ const { isMobile } = useDevice();
         }}
       >
         <p
-          className="case-study-subtitle md:mt-[23vh] mt-[60px] ml-[3.8vw] md:mb-[20px] w-[34.8vw]"
+          className="case-study-subtitle md:mt-[23vh] mt-[60px] ml-[3.8vw] mb-[20px] w-[34.8vw]"
           dangerouslySetInnerHTML={{ __html: current.title }}
         />
         <p

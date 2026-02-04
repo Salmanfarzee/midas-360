@@ -4,7 +4,7 @@ const LeadershipDetailContent = () => {
   return (
     <section className=" mt-8 mb-24">
       {/* Content on the left */}
-      <div className="ml-[6.9vw]">
+      <div className="mx-[6.9vw]">
         <div className="">
           <p className={`${styles.LeadContent}`}>
             Durgaprasad (DP) is the Co-founder, Director, and Group CEO of
