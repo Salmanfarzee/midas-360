@@ -58,8 +58,8 @@ const Navigation = ({ scrolled ,isHome}: NavigationProps) => {
           <a href="/newsandevents" className="block px-4">
             News and Events
           </a>
-          <a href="/leadership" className="block px-4">
-            Leadership
+          <a href="/aboutus" className="block px-4">
+            About Us
           </a>
         </div>
       </div>

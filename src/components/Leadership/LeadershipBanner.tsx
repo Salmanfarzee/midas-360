@@ -11,7 +11,7 @@ const LeadershipBanner = () => {
     >
       {/* Overlay text */}
       <p className={` absolute bottom-[15vh] left-[6vw] ${styles.bannerTitle}`}>
-        Leadership
+        About Us
       </p>
     </section>
   );

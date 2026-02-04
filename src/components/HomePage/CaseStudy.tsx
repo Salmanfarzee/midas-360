@@ -79,7 +79,7 @@ const { isMobile } = useDevice();
           className="case-study-content ml-[3.8vw] w-[51.6vw] md:block hidden"
           dangerouslySetInnerHTML={{ __html: current.content }}
         />
-        <div className="flex ml-[4.4vw] md:mt-[6.4vh] mt-[10px]">
+        <div className="flex ml-[4.4vw] md:mt-[6.4vh] mt-[0px]">
           <img
             src="/assets/arrow-right-white.png"
             alt="Arrow Right"

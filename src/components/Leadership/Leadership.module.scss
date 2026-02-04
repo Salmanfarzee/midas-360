@@ -2,6 +2,21 @@
   font-size: calc(#{$size} * (100vw / #{$base}));
   line-height: calc(#{$line} * (100vw / #{$base}));
 }
+@mixin fluid-width($width, $base: 1440px) {
+  width: calc(#{$width} * (100vw / #{$base}));
+}
+
+@mixin fluid-height($height, $base: 1440px) {
+  height: calc(#{$height} * (100vw / #{$base}));
+}
+
+@mixin fluid-top($top, $base: 1440px) {
+  top: calc(#{$top} * (100vw / #{$base}));
+}
+
+@mixin fluid-left($left, $base: 1440px) {
+  left: calc(#{$left} * (100vw / #{$base}));
+}
 
 .bannerTitle {
   font-family: "Poppins", sans-serif;
@@ -27,6 +42,52 @@
   color: #454545;
 }
 
+.ourLeadershipSection {
+  .NEReadmore {
+    @include fluid-font(15px, 20px);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #209cd8;
+  }
+
+  .leaderWrapper {
+    position: relative;
+    width: 100%;
+    // @include fluid-height(386px); // match background height
+  }
+
+  .leaderBg {
+    @include fluid-width(450px);
+    @include fluid-height(470px);
+  }
+  .leaderImg {
+    @include fluid-top(56px);
+    @include fluid-left(75px);
+
+    @include fluid-width(303px);
+    @include fluid-height(346px);
+  }
+  h5 {
+    @include fluid-font(28px, 38px);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #454545;
+  }
+  p {
+    @include fluid-font(20px, 32px);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: #454545;
+  }
+  .leadQuote {
+    @include fluid-font(30px, 49px);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: #454545;
+  }
+}
+
 @media (max-width: 768px) {
   .traintitle {
     font-size: 14px !important;
@@ -34,6 +95,11 @@
   }
 
   .traincondent {
+    font-size: 9px !important;
+    line-height: 14px !important;
+  }
+
+  .NEReadmore {
     font-size: 9px !important;
     line-height: 14px !important;
   }

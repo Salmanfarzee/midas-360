@@ -23,8 +23,8 @@ const MobileNavigation = () => {
           <a href="/newsandevents" className="hover:underline text-base">
             News and Events
           </a>
-          <a href="/leadership" className="hover:underline text-base">
-            Leadership
+          <a href="/aboutus" className="hover:underline text-base">
+            About Us
           </a>
         </div>
       </details>
