@@ -7,32 +7,50 @@ const LeadershipDetailContent = () => {
       <div className="mx-[6.9vw]">
         <div className="">
           <p className={`${styles.LeadContent}`}>
-            Durgaprasad (DP) is the Co-founder, Director, and Group CEO of
-            Bahwan CyberTek Group, where he strategically directs operations and
-            business development, overseeing global digital transformation
-            engagements. As an Executive Entrepreneur, DP's vision led to the
-            creation of nine subsidiaries and three Joint Ventures, generating
-            over $1.25 billion in revenues over the past decade. Notable
-            initiatives include a pioneering 4th Party Logistics (4PL)
-            organization in the Middle East with DHL for Petroleum Development
-            Oman. Under DP's leadership, Bahwan CyberTek emerged as a key player
-            in Big Data, Analytics, Mobility, Cloud, and UXM solutions, serving
-            diverse industries in 20 countries.
+            Ms. Hind Bahwan is the Founder and Chairperson of Bahwan CyberTek
+            Group which employs over 4000 associates, operates in 50 countries
+            and serves 2200+ customers including Fortune 500 companies. Her
+            leadership extends to HBTI DMCC, an independent, privately owned
+            commodity trading company, where she serves as Chairman, overseeing
+            a private commodity trading entity with a global reach in crude oil
+            and oil products. In 2024, she was appointed as the Chairman of the
+            Family Business Council Gulf (FBCG), a prominent non-profit
+            organization dedicated to supporting the continuity and success of
+            family businesses across the GCC region.
           </p>
           <p className={`${styles.LeadContent} my-8`}>
-            DP's commitment to international quality standards led Bahwan
-            CyberTek to early CMMi Level 5, Version 1.3 certification. The group
-            received numerous awards, including Oracle's Business Excellence
-            Award, Red Herring's Top 100 Technology Companies in APAC, and
-            recognition from Stanford Graduate School of Business. DP,
-            consistently ranked among Oman's top business leaders and
-            influential CEOs, received the Lifetime Achievement Award in
-            Technology 2020 and was recognized as "One of the Most Powerful
-            CEOs" by the Oman Economic Review.
+            Beyond the corporate frontier, Ms. Bahwan is the visionary behind
+            Bahwan Lifestyle, curating innovative luxury products for the
+            discerning consumer. Her strategic prowess reflects in her roles on
+            the boards of various public and private organizations. She is on
+            the Board of the Harvard Business School Middle East and North
+            Africa Board (MENAAB) which helps in incorporating a global
+            perspective into the School’s work and curriculum. She is a Member
+            of the Middle Centre Advisory Board of the London School of
+            Economics, a Member of the Middle East Advisory Board of Coutts &
+            Co., and a Board Member of the Family Business Network (FBN) for
+            GCC.
           </p>
-          <p className={`${styles.LeadContent} `}>
-            He holds an engineering degree from Anna University, Chennai, and
-            completed management development programs at Kellogg and XLRI.
+          <p className={`${styles.LeadContent} mb-8`}>
+            Ms. Bahwan is a recipient of many honors including the Legion Of
+            Honor Award From France’s Ambassador to the Sultanate Of Oman in
+            2019, Ernst & Young’s ‘Oman’s Young Entrepreneur of the Year 2000’,
+            Arabian Business ‘e-Achiever of the Year’ award from H.H. Sheikh
+            Mohammed Bin Rasheed in 2001, ‘IT Women of the Year 2002’ award by
+            UNDP, ‘Global Leaders for Tomorrow’ award by the World Economic
+            Forum in 2003, ‘Global Young Leader’ by the World Economic Forum in
+            2007 and ‘Woman of Power Award’ by Asian Business Leadership Forum
+            in 2011. She has also been featured on the 100 Power Businesswomen
+            in The Middle East, published by Forbes Middle East over multiple
+            years. Notably, under her stewardship, Bahwan CyberTek earned the
+            distinction of being featured in three Stanford case studies, a
+            testament to her strategic acumen.
+          </p>
+          <p className={`${styles.LeadContent}`}>
+            Ms Bahwan boasts an academic foundation in Computer Science and
+            holds distinguished alumni status from the Harvard Business School.
+            Additionally, she is a celebrated Kellogg School of Management
+            Executive Scholar, specializing in leadership and management.
           </p>
         </div>
       </div>

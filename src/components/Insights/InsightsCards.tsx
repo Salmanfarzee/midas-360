@@ -18,12 +18,12 @@ const Card: React.FC<CardProps> = ({ title, img }) => {
   />
 
   {/* Wrap title + link in a container anchored to bottom */}
-  <div className="absolute bottom-[20px] left-0 right-0 px-6 z-20">
+  <div className="absolute bottom-[30px] left-0 right-0 px-6 z-20">
     <h6 className={` ${styles.InsightsCardTitle} mb-4`}>
       {title}
     </h6>
 
-    <a href="" className={`${styles.InsightsCardLink} inline-block`}>
+    <a href="/insightsdetail" className={`${styles.InsightsCardLink} inline-block`}>
       <img
         src="/assets/arrow-white-insights.svg"
         alt="Arrow"
@@ -42,10 +42,10 @@ const InsightsCards: React.FC = () => {
       title: "Saving $1.2M in Transport by Enhancing Asset Availability",
       img: "/assets/casestudy-inner1.svg",
     },
-    {
-      title: "Saving $1.2M in Transport by Enhancing Asset Availability",
-      img: "/assets/casestudy-inner1.svg",
-    },
+    // {
+    //   title: "Saving $1.2M in Transport by Enhancing Asset Availability",
+    //   img: "/assets/casestudy-inner1.svg",
+    // },
   ];
 
   return (

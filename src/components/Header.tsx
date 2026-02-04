@@ -42,13 +42,13 @@ const Header: React.FC = () => {
         <a href="/" className="hidden md:block">
           {isHome && !scrolled ? (
             <img
-              src="/assets/midas-white.svg"
+              src="/assets/midas-white-logo.svg"
               alt="Midas360 Home logo"
               className="transition-all duration-300 ease-in-out"
             />
           ) : (
             <img
-              src="/assets/midas-color.svg"
+              src="/assets/midas-color-logo.svg"
               alt="Midas360 Home logo"
               className="transition-all duration-300 ease-in-out"
             />

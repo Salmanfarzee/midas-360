@@ -8,10 +8,10 @@ const LeadershipDetailComp = () => {
         <div className="flex items-center md:items-start flex-col mt-[2.7vh]">
           {/*  Title */}
           <h2 className={`${styles.LeadTitle} md:block hidden mb-4`}>
-            S. Durgaprasad (DP)
+            Hind Bahwan
           </h2>
           <p className={`${styles.LeadDesignation} md:block hidden`}>
-            Co-founder, Director & Group CEO
+            Founder & Chairperson
           </p>
         </div>
       </div>
@@ -27,9 +27,9 @@ const LeadershipDetailComp = () => {
 
         {/* Foreground image */}
         <img
-          src="/assets/detailImage.svg"
+          src="/assets/HB-leadership.svg"
           alt="Foreground"
-          className="absolute top-15 left-[20px] top-[15px] h-[335px] object-contain"
+          className="absolute top-15 left-[19px] top-[17px] h-[335px] object-contain"
         />
       </div>
     </section>
