@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route,BrowserRouter } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import ContactUsPage from "../pages/ContactUsPage";
 import InsightsPage from "../pages/InsightsPage";
@@ -11,6 +11,7 @@ import InsightsDetailPage from "../pages/InsightsDetailPage";
 
 const AppRoutes = () => {
   return (
+    <BrowserRouter>
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/contactus" element={<ContactUsPage />} />
@@ -21,6 +22,7 @@ const AppRoutes = () => {
       <Route path="/newsandevents" element={<NewsAndEventsPage />} />
       <Route path="/insightsdetail" element={<InsightsDetailPage />} />
     </Routes>
+    </BrowserRouter>
   );
 };
 export default AppRoutes;
