@@ -1,5 +1,5 @@
 import { useDevice } from "../Context/AppContext";
-import styles from "./leadership.module.scss";
+import styles from "./Leadership.module.scss";
 
 const LeadershipBanner = () => {
   const { isMobile } = useDevice();
