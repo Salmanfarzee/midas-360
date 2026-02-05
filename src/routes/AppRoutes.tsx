@@ -1,0 +1,27 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";  // ✅ remove BrowserRouter here
+import HomePage from "../pages/HomePage";
+import ContactUsPage from "../pages/ContactUsPage";
+import InsightsPage from "../pages/InsightsPage";
+import HowItWorksPage from "../pages/HowItWorksPage";
+import LeadershipPage from "../pages/LeadershipPage";
+import LeadershipDetailPage from "../pages/LeadershipDetailPage";
+import NewsAndEventsPage from "../pages/NewsAndEvents";
+import InsightsDetailPage from "../pages/InsightsDetailPage";
+
+const AppRoutes = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/contactus" element={<ContactUsPage />} />
+      <Route path="/insights" element={<InsightsPage />} />
+      <Route path="/howitworks" element={<HowItWorksPage />} />
+      <Route path="/aboutus" element={<LeadershipPage />} />
+      <Route path="/leadershipdetail" element={<LeadershipDetailPage />} />
+      <Route path="/newsandevents" element={<NewsAndEventsPage />} />
+      <Route path="/insightsdetail" element={<InsightsDetailPage />} />
+    </Routes>
+  );
+};
+
+export default AppRoutes;
