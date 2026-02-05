@@ -22,3 +22,22 @@
   font-weight: 300;
   color: #454545;
 }
+
+@media (max-width: 768px) {
+  .LeadTitle {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    font-weight: 500 !important;
+  }
+
+  .LeadDesignation {
+    font-size: 11px !important;
+    line-height: 19px !important;
+    font-weight: 500 !important;
+  }
+
+  .LeadContent {
+    font-size: 9px !important;
+    line-height: 14px !important;
+  }
+}

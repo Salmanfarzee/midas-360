@@ -11,7 +11,7 @@ const LeadershipBanner = () => {
       270.06deg,
       rgba(27, 27, 27, 0) 54.21%,
       rgba(0, 0, 0, 0.55) 70.66%
-    ), url(${isMobile ? "/assets/leadership-mob-banner.svg" : "/assets/LeadersjipBanner.svg"})`,
+    ), url(${isMobile ? "/assets/about-mob-banner.svg" : "/assets/LeadersjipBanner.svg"})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import React, { useEffect, useState } from "react";
 
 interface ContactFormData {
   name: string;
@@ -19,6 +18,19 @@ const ContactUs: React.FC = () => {
     email: "",
     message: "",
   });
+
+  const [Mobile, setMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup on unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -66,8 +78,9 @@ const ContactUs: React.FC = () => {
               name="countryCode"
               value={formData.countryCode}
               onChange={handleChange}
-              className="lead-the-future-form-value w-[63px] md:md:h-[41px] border-[0.64px] border-[#D3D3D3] rounded-[5.13px] text-sm px-2 bg-white"
+              className="lead-the-future-form-value w-[63px] md:md:h-[41px] border-[0.64px] border-[#D3D3D3] rounded-[5.13px] text-sm px-2 bg-[#209CD803] mt-[4px] md:mt-[16px]"
             >
+
               <option value="+91">+91</option>
               <option value="+1">+1</option>
               <option value="+44">+44</option>
@@ -79,7 +92,7 @@ const ContactUs: React.FC = () => {
               value={formData.mobile}
               onChange={handleChange}
               placeholder="Enter mobile number"
-              className="lead-the-future-form-value w-[395px] md:md:h-[41px] ml-[9px] border-[0.64px] border-[#D3D3D3] rounded-[5.13px]"
+              className="lead-the-future-form-value w-[395px] md:md:h-[41px] ml-[9px] mt-[4px] md:mt-[16px] border-[0.64px] border-[#D3D3D3] rounded-[5.13px] bg-[#209CD803]"
             />
           </div>
         ) : (
@@ -89,7 +102,7 @@ const ContactUs: React.FC = () => {
             value={(formData as any)[name]}
             onChange={handleChange}
             placeholder={placeholder}
-            className="lead-the-future-form-value w-full md:md:h-[41px] mt-[7.14px] rounded-[5.13px] border-[0.64px] border-[#D3D3D3]"
+            className="lead-the-future-form-value w-full md:md:h-[41px] mt-[7.14px] rounded-[5.13px] border-[0.64px] border-[#D3D3D3] bg-[#209CD803]"
           />
         )}
       </div>
@@ -97,37 +110,46 @@ const ContactUs: React.FC = () => {
   };
 
   return (
-    <section className="h-auto w-full grid md:mt-20 grid-cols-1 md:grid-cols-2">
+    <section className="h-auto w-full grid md:mt-20 grid-cols-1 bg-[#209CD808] md:grid-cols-2">
       <div className="flex flex-col">
-        <p className="lead-the-future-title mt-[94px] ml-[6.9vw]">Let’s Connect</p>
-        <p className="lead-the-future-content ml-[6.9vw] mt-[10px]">
-          Predict, perform, and power the future<br/> of urban mobility.
+        <p className="lead-the-future-title mt-[94px] ml-[6.9vw]">
+          Let’s Connect
+        </p>
+        <p className="lead-the-future-content ml-[6.9vw] md:mt-[10px] mt-[4px] block md:hidden">
+          Predict, perform, and power the future of urban mobility.
+        </p>
+        <p className="lead-the-future-content ml-[6.9vw] mt-[10px] hidden md:block">
+          Predict, perform, and power the future
+          <br /> of urban mobility.
         </p>
         <img
           src="/assets/lead-the-future.png"
           alt="Lead the future"
-          className="w-[608.16px] h-[221.59px] mt-[69px] mb-[97.41px]"
+          className="w-[608.16px] h-[221.59px] mt-[69px] mb-[97.41px] md:block hidden"
         />
       </div>
 
-      <form className="flex flex-col mt-[80px] mb-[80px]" onSubmit={handleSubmit}>
+      <form
+        className="flex flex-col md:mt-[80px] md:mb-[80px] mt-[12px] mb-[20px] mx-[6.9vw] md:mx-0"
+        onSubmit={handleSubmit}
+      >
         <TextField
-          marginTop="31px"
+          marginTop={Mobile ? "12px" : "31px"}
           label="Name"
           placeholder="Enter your name"
           required
           name="name"
         />
 
-           <TextField
-          marginTop="31px"
+        <TextField
+          marginTop={Mobile ? "12px" : "31px"}
           label="Company Name"
-          placeholder="Enter your company name"     
+          placeholder="Enter your company name"
           name="companyname"
         />
 
-         <TextField
-          marginTop="24.06px"
+        <TextField
+          marginTop={Mobile ? "12px" : "31px"}
           label="Mobile"
           placeholder="12345 67890"
           isMobile
@@ -135,16 +157,15 @@ const ContactUs: React.FC = () => {
         />
 
         <TextField
-          marginTop="25.86px"
+          marginTop={Mobile ? "12px" : "31px"}
           label="Business email ID"
           placeholder="Enter your Business email ID"
           required
           name="email"
         />
-       
 
         {/* ✅ Textarea for "How can we help you" */}
-        <div className="md:w-[467px] flex flex-col mt-[24px]">
+        <div className="md:w-[467px] flex flex-col md:mt-[24px] mt-[12px]">
           <p className="lead-the-future-form-label">How can we help you</p>
           <textarea
             name="message"
@@ -152,16 +173,24 @@ const ContactUs: React.FC = () => {
             onChange={handleChange}
             rows={3}
             placeholder="Write your message here..."
-            className="lead-the-future-form-value w-full rounded-[5.13px] border-[0.64px] border-[#D3D3D3] p-2"
+            className="lead-the-future-form-value w-full rounded-[5.13px] border-[0.64px] mt-2 border-[#D3D3D3] p-2 bg-[#209CD803]"
           />
         </div>
 
         <button
           type="submit"
-          className="w-[11.3vw] h-[48px] bg-[#209CD8] rounded-[50px] flex items-center justify-center mt-[3.4vh] cursor-pointer hover:opacity-90"
+          className="md:w-[11.3vw] md:h-[48px] w-[70px] h-[24px] bg-[#209CD8] rounded-[50px] flex items-center justify-center mt-[3.4vh] cursor-pointer hover:opacity-90"
         >
           <p className="lead-the-future-submit">Submit</p>
         </button>
+
+        <div className="flex flex-col mx-[-6.9vw]">
+          <img
+            src="/assets/contact-train-mob.svg"
+            alt="Lead the future"
+            className="w-[60vw]  mt-[32px] mb-[16px] md:hidden block"
+          />
+        </div>
       </form>
     </section>
   );

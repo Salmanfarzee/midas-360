@@ -2,10 +2,10 @@ import styles from "./Leadership.module.scss";
 
 const LeadershipAbout = () => {
   return (
-    <section className="grid md:grid-cols-[60%_40%] grid-cols-1 my-12">
+    <section className="grid md:grid-cols-[60%_40%] grid-cols-1 md:my-12 my-4">
       {/* Content on the left */}
       <div className="ml-[6.9vw]">
-        <div className="flex items-center md:items-start flex-col mt-[2.7vh]">
+        <div className="flex items-start md:items-start flex-col mt-[2.7vh]">
           {/* Desktop Title */}
           <p className={`${styles.traintitle} md:block hidden`}>
             About midas360
@@ -36,13 +36,13 @@ const LeadershipAbout = () => {
           </p>
 
           {/* Mobile Title */}
-          <p className={`${styles.traintitle} block md:hidden`}>
+          <p className={`${styles.traintitle}   md:hidden`}>
             About midas360{" "}
           </p>
 
           {/* Mobile Content */}
           <p
-            className={`${styles.traincondent} mt-[12px] block md:hidden justify-center text-center pb-12`}
+            className={`${styles.traincondent} mt-[12px] block md:hidden `}
           >
             midas360 (Metrorail Intelligent Decision Analytics System) is an
             advanced <br />
@@ -58,7 +58,7 @@ const LeadershipAbout = () => {
             reliability.
           </p>
           <p
-            className={`${styles.traincondent} mt-[20px] block md:hidden justify-center text-center pb-12`}
+            className={`${styles.traincondent} mt-[20px] block md:hidden  pb-4`}
           >
             At its core, midas360 integrates data from various sources internal
             <br />

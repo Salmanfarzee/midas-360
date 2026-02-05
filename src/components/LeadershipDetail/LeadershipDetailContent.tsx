@@ -2,7 +2,7 @@ import styles from "./LeadershipDetail.module.scss";
 
 const LeadershipDetailContent = () => {
   return (
-    <section className=" mt-8 mb-24">
+    <section className=" md:mt-8 mt-0  md:mb-24 mb-8">
       {/* Content on the left */}
       <div className="mx-[6.9vw]">
         <div className="">
@@ -18,7 +18,7 @@ const LeadershipDetailContent = () => {
             organization dedicated to supporting the continuity and success of
             family businesses across the GCC region.
           </p>
-          <p className={`${styles.LeadContent} my-8`}>
+          <p className={`${styles.LeadContent} md:my-8 my-4`}>
             Beyond the corporate frontier, Ms. Bahwan is the visionary behind
             Bahwan Lifestyle, curating innovative luxury products for the
             discerning consumer. Her strategic prowess reflects in her roles on
@@ -31,7 +31,7 @@ const LeadershipDetailContent = () => {
             Co., and a Board Member of the Family Business Network (FBN) for
             GCC.
           </p>
-          <p className={`${styles.LeadContent} mb-8`}>
+          <p className={`${styles.LeadContent} md:mb-8 mb-4`}>
             Ms. Bahwan is a recipient of many honors including the Legion Of
             Honor Award From France’s Ambassador to the Sultanate Of Oman in
             2019, Ernst & Young’s ‘Oman’s Young Entrepreneur of the Year 2000’,

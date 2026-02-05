@@ -5,8 +5,8 @@ const HowItWorksSec4: React.FC = () => {
   return (
     <section className={`  ${styles.HowItWorksSec4} mb-8`}>
       {/* Title and description */}
-      <div className="px-[6.9vw] py-5 mt-12">
-        <h2 className="  pb-3">midas360 – KPIs </h2>
+      <div className="px-[6.9vw] py-5 md:mt-12">
+        <h2 className="  md:pb-3">midas360 – KPIs </h2>
         <p className="">
           Key Performance Indicators (KPIs) help metro rail systems measure
           performance across operations, safety, customer service, finance, and
@@ -16,9 +16,13 @@ const HowItWorksSec4: React.FC = () => {
         </p>
       </div>
 
-      {/* Image */}
-      <div className="pb-5 flex justify-center">
+      {/* web Image */}
+      <div className="pb-5 md:flex hidden  justify-center">
         <img src="/assets/HowItWorksSec4.svg" alt="How it works" />
+      </div>
+       {/* mob Image */}
+      <div className="pb-5 md:hidden  flex justify-center">
+        <img src="/assets/how-sec4-mob.svg" alt="How it works" />
       </div>
     </section>
   );
